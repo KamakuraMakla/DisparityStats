@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>「自己責任のゆくえ」</title>
+        <link rel = "stylesheet" href = "./style/index.css">
+        <script src="https://cdn.plot.ly/plotly-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div class = "paper">
+            <div id = "titles">
+                <h1>自己責任論のゆくえ</h1>
+                <h2>大学で「学びたかった」若者たち。</h2>
+            </div>
+            <div class = "question1">
+                <input id = "quizYear" class = "emphInput" type="number" size = "4" tabindex="-1" value = "2024">
+               年と比較して、<br>
+                大学の学費は、<span class = "emph" id = "tuitionDisp">2倍</span>
+                <br>
+                生活費は、<span class = "emph" id = "living_wage">3倍</span>
+                <div class = "rightbottomComents">
+                    <!--スマホ版では削除-->
+                    2025年現在、JASSO (日本学生支援機構) から奨学金を受給している学生は ○○万人。<br>
+                    うち、○○ % が貸与型の奨学金だ。<br>
+                    「借金」そのものである。<br>
+                </div>
+            </div>
+            <div id="born_fig_out"></div>
+        </div>
+        <script>
+            fetch("./assets/born_fig.json")
+            .then(response => response.json())
+            .then(data => {
+                Plotly.newPlot("born_fig_out", data.data, data.layout);
+            });
+        </script>
+    </body>
+</html>

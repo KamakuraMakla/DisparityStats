@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+html
+{
+    background-color: black;
+    color: white;
+}
+
+.paper
+{
+    padding: 2em;
+    margin: 2em;
+}
+
+#titles
+{
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+.question1
+{
+    font-size: 3em;
+    font-weight: bold;
+    background-image: url("../assets/ame_city.jpg");
+    height: 100vh;
+}
+
+.question1 .emph, .question1 .emphInput
+{
+    font-size: 2em;
+    color: black;
+    background-color: white;
+    margin: 2pt;
+    padding: 2pt;
+}
+
+.emphInput
+{
+    width: 3em;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+.rightbottomComents
+{
+    position: absolute;
+    padding: 1em;
+    font-weight: bold;
+    opacity: 0.6;
+    width: 20em;
+    height: 20em;
+    max-width: 50%;
+    font-size: 0.5em;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+}
+
+#born_fig_out
+{
+    width: 100%;
+    max-width: 100%;
+}
