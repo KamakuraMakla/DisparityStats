@@ -12,7 +12,7 @@ https://github.com/python-opendata-analysis/python-opendata-analysis-book
 ## ライセンス
 MIT License
 
-Copyright (c) 2025 Shintaro Kamakura
+Copyright (c) 2025 S. Kamakura
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
