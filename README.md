@@ -8,7 +8,6 @@
 
 https://github.com/python-opendata-analysis/python-opendata-analysis-book
 
-© 2025 Yoshizumi
 
 ## ライセンス
 MIT License
